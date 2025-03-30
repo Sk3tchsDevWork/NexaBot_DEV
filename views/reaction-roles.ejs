@@ -1,0 +1,27 @@
+<h1>Reaction Roles</h1>
+<table>
+  <tr>
+    <th>Message ID</th>
+    <th>Emoji</th>
+    <th>Role ID</th>
+  </tr>
+  <% roles.forEach(role => { %>
+    <tr>
+      <td><%= role.messageId %></td>
+      <td><%= role.emoji %></td>
+      <td><%= role.roleId %></td>
+    </tr>
+  <% }) %>
+</table>
+<form action="/reaction-roles" method="POST">
+  <label for="messageId">Message ID:</label>
+  <input type="text" id="messageId" name="messageId" required><br><br>
+
+  <label for="emoji">Emoji:</label>
+  <input type="text" id="emoji" name="emoji" required><br><br>
+
+  <label for="roleId">Role ID:</label>
+  <input type="text" id="roleId" name="roleId" required><br><br>
+
+  <button type="submit">Add Reaction Role</button>
+</form>

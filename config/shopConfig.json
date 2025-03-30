@@ -1,0 +1,14 @@
+{
+    "shopItems": {
+      "role_upgrade": 200,
+      "special_badge": 500,
+      "vip_access": 1000,
+      "custom_title": 750
+    },
+    "streakMilestones": {
+      "7": 100,
+      "14": 250,
+      "30": 500,
+      "100": 2000
+    }
+  }

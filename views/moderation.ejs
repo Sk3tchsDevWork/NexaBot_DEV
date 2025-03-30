@@ -1,0 +1,13 @@
+<h1>Moderation Settings</h1>
+<form action="/moderation" method="POST">
+  <label for="loggingChannel">Logging Channel:</label>
+  <input type="text" id="loggingChannel" name="loggingChannel" value="<%= loggingChannel %>"><br><br>
+
+  <label for="autoModeration">Auto-Moderation:</label>
+  <select id="autoModeration" name="autoModeration">
+    <option value="Enabled" <%= autoModeration === 'Enabled' ? 'selected' : '' %>>Enabled</option>
+    <option value="Disabled" <%= autoModeration === 'Disabled' ? 'selected' : '' %>>Disabled</option>
+  </select><br><br>
+
+  <button type="submit">Save Settings</button>
+</form>
